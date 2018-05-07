@@ -8,27 +8,26 @@ const render = () => {
   const Section = require('components').default;
   const nameAry = [
     {
+      id: 1,
       name: "Austin",
       mobile: "0978-086-965"
     },
     {
+      id: 2,
       name: "Jason",
       mobile: "0928-216-235"
-    }
-    ,
+    },
     {
+      id: 3,
       name: "Andy",
       mobile: "0911-465-757"
     }
   ];
   ReactDOM.render(
     <AppContainer>
-      <div className={'wrap'}>
+      <div className="wrap">
         <Main />
-        {nameAry.map((item,index)=>{
-            return <Section key={index} name={item.name} mobile={item.mobile} />
-        })}
-        
+        {nameAry.map(item => <Section key={item.id} name={item.name} mobile={item.mobile} />)}
       </div>
     </AppContainer>,
     document.getElementById('app')
