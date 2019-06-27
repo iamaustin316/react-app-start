@@ -23,6 +23,7 @@ const render = () => {
       mobile: "0911-465-757"
     }
   ];
+  const props = {firstName: 'Ben', lastName: 'Hector'};
   ReactDOM.render(
     <AppContainer>
       <div className="wrap">
